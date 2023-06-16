@@ -16,7 +16,8 @@
     </div>
 
 
-  <div class="lists" style: background-image: <%= image_tag "avatar_placeholder.jpg", class: "avatar avatar-xs", data: { titi: "toto" } %>>
+  <div class="lists" >
+  <%= cl_image_tag("jmrocoqlced4py8fec1n",width: 400, height: 300, crop: :fill) %>
     <% @lists.each do |list| %>
       <li><%= link_to list.name, list %></li>
     <% end %>
