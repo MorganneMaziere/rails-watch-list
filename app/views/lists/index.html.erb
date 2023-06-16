@@ -16,7 +16,7 @@
     </div>
 
 
-  <div class="lists">
+  <div class="lists" style: background-image: <%= image_tag "avatar_placeholder.jpg", class: "avatar avatar-xs", data: { titi: "toto" } %>>
     <% @lists.each do |list| %>
       <li><%= link_to list.name, list %></li>
     <% end %>
